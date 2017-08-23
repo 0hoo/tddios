@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C548BFA61F4DCB8B00B49D59 /* Kanna.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C548BFA21F4DCB8B00B49D59 /* Kanna.framework */; };
+		C548BFA71F4DCB8C00B49D59 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C548BFA31F4DCB8B00B49D59 /* PromiseKit.framework */; };
+		C548BFA81F4DCB8C00B49D59 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C548BFA41F4DCB8B00B49D59 /* SQLite.framework */; };
+		C548BFA91F4DCB8C00B49D59 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C548BFA51F4DCB8B00B49D59 /* SVProgressHUD.framework */; };
+		C548BFAD1F4DCBF700B49D59 /* StockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C548BFAB1F4DCBF700B49D59 /* StockManager.swift */; };
+		C548BFAE1F4DCBF700B49D59 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = C548BFAC1F4DCBF700B49D59 /* Store.swift */; };
 		C587D8A71F4D50C3006CEF34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C587D8A61F4D50C3006CEF34 /* AppDelegate.swift */; };
 		C587D8AE1F4D50C3006CEF34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C587D8AD1F4D50C3006CEF34 /* Assets.xcassets */; };
 		C587D8B11F4D50C3006CEF34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C587D8AF1F4D50C3006CEF34 /* LaunchScreen.storyboard */; };
@@ -38,6 +44,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C548BFA21F4DCB8B00B49D59 /* Kanna.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kanna.framework; path = Carthage/Build/iOS/Kanna.framework; sourceTree = "<group>"; };
+		C548BFA31F4DCB8B00B49D59 /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = Carthage/Build/iOS/PromiseKit.framework; sourceTree = "<group>"; };
+		C548BFA41F4DCB8B00B49D59 /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = Carthage/Build/iOS/SQLite.framework; sourceTree = "<group>"; };
+		C548BFA51F4DCB8B00B49D59 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
+		C548BFAB1F4DCBF700B49D59 /* StockManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockManager.swift; sourceTree = "<group>"; };
+		C548BFAC1F4DCBF700B49D59 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		C587D8A31F4D50C3006CEF34 /* Stock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C587D8A61F4D50C3006CEF34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C587D8AD1F4D50C3006CEF34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,6 +74,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C548BFA61F4DCB8B00B49D59 /* Kanna.framework in Frameworks */,
+				C548BFA71F4DCB8C00B49D59 /* PromiseKit.framework in Frameworks */,
+				C548BFA81F4DCB8C00B49D59 /* SQLite.framework in Frameworks */,
+				C548BFA91F4DCB8C00B49D59 /* SVProgressHUD.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +98,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C548BFA11F4DCB8B00B49D59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C548BFA21F4DCB8B00B49D59 /* Kanna.framework */,
+				C548BFA31F4DCB8B00B49D59 /* PromiseKit.framework */,
+				C548BFA41F4DCB8B00B49D59 /* SQLite.framework */,
+				C548BFA51F4DCB8B00B49D59 /* SVProgressHUD.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C587D89A1F4D50C3006CEF34 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +116,7 @@
 				C587D8BA1F4D50C3006CEF34 /* StockTests */,
 				C587D8C51F4D50C3006CEF34 /* StockUITests */,
 				C587D8A41F4D50C3006CEF34 /* Products */,
+				C548BFA11F4DCB8B00B49D59 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,6 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				C587D8D51F4D5486006CEF34 /* Stock.swift */,
+				C548BFAB1F4DCBF700B49D59 /* StockManager.swift */,
+				C548BFAC1F4DCBF700B49D59 /* Store.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -155,6 +185,7 @@
 				C587D89F1F4D50C3006CEF34 /* Sources */,
 				C587D8A01F4D50C3006CEF34 /* Frameworks */,
 				C587D8A11F4D50C3006CEF34 /* Resources */,
+				C548BFAA1F4DCB9200B49D59 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -275,13 +306,36 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C548BFAA1F4DCB9200B49D59 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Kanna.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SQLite.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SVProgressHUD.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/PromiseKit.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C587D89F1F4D50C3006CEF34 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C548BFAE1F4DCBF700B49D59 /* Store.swift in Sources */,
 				C587D8D91F4D5A0D006CEF34 /* StocksViewController.swift in Sources */,
 				C587D8E21F4D73E5006CEF34 /* NSObject+Stock.swift in Sources */,
+				C548BFAD1F4DCBF700B49D59 /* StockManager.swift in Sources */,
 				C587D8A71F4D50C3006CEF34 /* AppDelegate.swift in Sources */,
 				C587D8DF1F4D6B94006CEF34 /* StockTableViewCell.swift in Sources */,
 				C587D8D61F4D5486006CEF34 /* Stock.swift in Sources */,
@@ -428,8 +482,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				HEADER_SEARCH_PATHS = $SDKROOT/usr/include/libxml2;
 				INFOPLIST_FILE = Stock/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.0hoo.Stock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -440,8 +499,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				HEADER_SEARCH_PATHS = $SDKROOT/usr/include/libxml2;
 				INFOPLIST_FILE = Stock/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.0hoo.Stock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -521,6 +585,7 @@
 				C587D8CD1F4D50C4006CEF34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C587D8CE1F4D50C4006CEF34 /* Build configuration list for PBXNativeTarget "StockTests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +594,7 @@
 				C587D8D01F4D50C4006CEF34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C587D8D11F4D50C4006CEF34 /* Build configuration list for PBXNativeTarget "StockUITests" */ = {
 			isa = XCConfigurationList;
@@ -537,6 +603,7 @@
 				C587D8D31F4D50C4006CEF34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

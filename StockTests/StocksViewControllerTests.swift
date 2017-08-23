@@ -43,14 +43,14 @@ final class StocksViewControllerTests: XCTestCase {
         XCTAssertEqual(vc.tableView?.numberOfSections, 1)
         XCTAssertEqual(vc.tableView?.numberOfRows(inSection: 0), 0)
         
-        let stock = Stock(code: "001100", name: "A", currentPrice: 15000, priceDiff: 100, rateDiff: 0.5, isPriceUp: true, isPriceKeep: false)
+        let stock = Stock(stockId: nil, code: "001100", name: "A", currentPrice: 15000, priceDiff: 100, rateDiff: 0.5, isPriceUp: true, isPriceKeep: false)
         vc.stocks.append(stock)
         vc.tableView?.reloadData()
         XCTAssertEqual(vc.tableView?.numberOfRows(inSection: 0), 1)
     }
     
     func testCellForRowShouldReturnStockTableViewCell() {
-        let stock = Stock(code: "001100", name: "A", currentPrice: 15000, priceDiff: 100, rateDiff: 0.5, isPriceUp: true, isPriceKeep: false)
+        let stock = Stock(stockId: nil, code: "001100", name: "A", currentPrice: 15000, priceDiff: 100, rateDiff: 0.5, isPriceUp: true, isPriceKeep: false)
         vc.stocks.append(stock)
         vc.tableView?.reloadData()
         

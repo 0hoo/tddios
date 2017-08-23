@@ -2,6 +2,7 @@ import Foundation
 
 final class Stock {
     
+    var stockId: Int64?
     let code: String
     let name: String
     let currentPrice: Double
@@ -25,7 +26,8 @@ final class Stock {
         }
     }
     
-    init(code: String, name: String, currentPrice: Double, priceDiff: Double, rateDiff: Double, isPriceUp: Bool, isPriceKeep: Bool) {
+    init(stockId: Int64?, code: String, name: String, currentPrice: Double, priceDiff: Double, rateDiff: Double, isPriceUp: Bool, isPriceKeep: Bool) {
+        self.stockId = stockId
         self.code = code
         self.name = name
         self.currentPrice = currentPrice
