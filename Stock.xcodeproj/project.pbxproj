@@ -17,6 +17,7 @@
 		C587D8DC1F4D5A7F006CEF34 /* StocksViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C587D8DB1F4D5A7F006CEF34 /* StocksViewControllerTests.swift */; };
 		C587D8DF1F4D6B94006CEF34 /* StockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C587D8DD1F4D6B94006CEF34 /* StockTableViewCell.swift */; };
 		C587D8E01F4D6B94006CEF34 /* StockTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C587D8DE1F4D6B94006CEF34 /* StockTableViewCell.xib */; };
+		C587D8E21F4D73E5006CEF34 /* NSObject+Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C587D8E11F4D73E5006CEF34 /* NSObject+Stock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		C587D8DB1F4D5A7F006CEF34 /* StocksViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StocksViewControllerTests.swift; sourceTree = "<group>"; };
 		C587D8DD1F4D6B94006CEF34 /* StockTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockTableViewCell.swift; sourceTree = "<group>"; };
 		C587D8DE1F4D6B94006CEF34 /* StockTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StockTableViewCell.xib; sourceTree = "<group>"; };
+		C587D8E11F4D73E5006CEF34 /* NSObject+Stock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Stock.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			children = (
 				C587D8D41F4D5469006CEF34 /* Models */,
 				C587D8A61F4D50C3006CEF34 /* AppDelegate.swift */,
+				C587D8E11F4D73E5006CEF34 /* NSObject+Stock.swift */,
 				C587D8AD1F4D50C3006CEF34 /* Assets.xcassets */,
 				C587D8D71F4D5A0D006CEF34 /* StocksViewController.swift */,
 				C587D8D81F4D5A0D006CEF34 /* StocksViewController.xib */,
@@ -278,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C587D8D91F4D5A0D006CEF34 /* StocksViewController.swift in Sources */,
+				C587D8E21F4D73E5006CEF34 /* NSObject+Stock.swift in Sources */,
 				C587D8A71F4D50C3006CEF34 /* AppDelegate.swift in Sources */,
 				C587D8DF1F4D6B94006CEF34 /* StockTableViewCell.swift in Sources */,
 				C587D8D61F4D5486006CEF34 /* Stock.swift in Sources */,

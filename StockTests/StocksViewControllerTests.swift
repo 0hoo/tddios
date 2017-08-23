@@ -35,7 +35,7 @@ final class StocksViewControllerTests: XCTestCase {
         XCTAssertNotNil(vc.tableView)
     }
     
-    func testStocksViewControllerIsDataSource() {
+    func testStocksViewControllerIsTableViewDataSource() {
         XCTAssert(vc.tableView?.dataSource is StocksViewController)
     }
     
@@ -55,9 +55,15 @@ final class StocksViewControllerTests: XCTestCase {
         vc.tableView?.reloadData()
         
         let cell = vc.tableView.cellForRow(at: IndexPath(row: 0, section: 0)) as! StockTableViewCell
-        //XCTAssert(cell is StockTableViewCell)
         XCTAssertEqual(cell.nameLabel?.text, "A")
-        //XCTAssertEqual(cell.currentPriceLabel.text, "15000")
+    }
+    
+    func testStocksViewControllerIsTableViewDelegate() {
+        XCTAssert(vc.tableView?.delegate is StocksViewController)
+    }
+    
+    func testStocksViewControllerHeightForRow() {
+        XCTAssertEqual(vc.tableView(vc.tableView, heightForRowAt: IndexPath(row: 0, section: 0)), StockTableViewCell.height)
     }
 }
 

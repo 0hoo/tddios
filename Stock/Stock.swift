@@ -15,6 +15,16 @@ final class Stock {
         return currentPrice * Double(quantity)
     }
     
+    var priceDiffText: String {
+        if isPriceKeep {
+            return "0 +0.00%"
+        } else if isPriceUp {
+            return "▲ \(priceDiff) +\(rateDiff)%"
+        } else {
+            return "▼ \(priceDiff) -\(rateDiff)%"
+        }
+    }
+    
     init(code: String, name: String, currentPrice: Double, priceDiff: Double, rateDiff: Double, isPriceUp: Bool, isPriceKeep: Bool) {
         self.code = code
         self.name = name
