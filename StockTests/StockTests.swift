@@ -1,3 +1,4 @@
+
 //
 //  StockTests.swift
 //  StockTests
@@ -20,19 +21,19 @@ final class StockTests: XCTestCase {
     }
     
     func testStockInit() {
-        let stock = Stock(code: "001100", name: "A", currentPrice: 15000, priceDiff: 100, rateDiff: 0.5, isPriceUp: true, isPriceKeep: false)
+        let stock = Stock(stockId: nil, code: "001100", name: "A", currentPrice: 15000, priceDiff: 100, rateDiff: 0.5, isPriceUp: true, isPriceKeep: false)
         XCTAssertNotNil(stock)
     }
     
     func testStockInitSetValues() {
-        let stock = Stock(code: "001100", name: "A", currentPrice: 15000, priceDiff: 100, rateDiff: 0.5, isPriceUp: true, isPriceKeep: false)
+        let stock = Stock(stockId: nil, code: "001100", name: "A", currentPrice: 15000, priceDiff: 100, rateDiff: 0.5, isPriceUp: true, isPriceKeep: false)
         XCTAssertEqual(stock.code, "001100") 
         XCTAssertEqual(stock.name, "A")
         XCTAssertEqual(stock.currentPrice, 15000)
     }
     
     func testStockQuantity() {
-        let stock = Stock(code: "001100", name: "A", currentPrice: 15000, priceDiff: 100, rateDiff: 0.5, isPriceUp: true, isPriceKeep: false)
+        let stock = Stock(stockId: nil, code: "001100", name: "A", currentPrice: 15000, priceDiff: 100, rateDiff: 0.5, isPriceUp: true, isPriceKeep: false)
         XCTAssertEqual(stock.quantity, 0)
         XCTAssertEqual(stock.value, 0)
         
